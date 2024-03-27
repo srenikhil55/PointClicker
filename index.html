@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <title>Point Clicker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<h1>Hello.</h1>
+<h1 id="points">You have p points.</h1>
+<main>
+<button onClick="appendCSS()" id="clicker1">Get a Point</button>
+<button onClick="appendCSS()" id="clicker2">Get a Point</button>
+<button onClick="appendCSS()" id="clicker3">Get a Point</button>
+<button id="clicker4">Get a Point</button>
+</main>
+<script>
+    let points = 0;
+    function appendCSS() {
+        counter++;
+        document.getElementById('points').innerText = "You have " + points + " points."
+    }
+</script>
+</body>
+</html>
